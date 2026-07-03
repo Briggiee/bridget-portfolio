@@ -1,1 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Manufacturing Intelligence Dashboard | Case Study
+    </title>
+
+    <link rel="stylesheet"
+          href="../../css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">BN</span>
+            <span class="logo-name">Bridget</span>
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="../../index.html">
+                    ← Back to Portfolio
+                </a>
+            </li>
+
+            <li>
+                <a href="../manufacturing-dashboard/">
+                    Dashboard
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="nav-actions">
+
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                🌙
+            </button>
+
+            <div class="menu-toggle">
+                ☰
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<section class="project-page">
+
+    <div class="project-container">
+
+        <h1>
+
+            Manufacturing Intelligence Dashboard
+
+        </h1>
+
+        <p class="project-intro">
+
+            Business Intelligence Case Study
+
+        </p>
+
+    </div>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Executive Summary</h2>
+
+    <p>
+
+        This project demonstrates the design and development of an interactive Manufacturing Intelligence Dashboard using Power BI.
+
+        The solution consolidates production, inventory, sales, workforce, and supply chain data into a single reporting platform, enabling executives to monitor business performance, identify operational trends, and make informed decisions through interactive visual analytics.
+
+    </p>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Business Problem</h2>
+
+    <p>
+
+        Manufacturing organizations often rely on disconnected reports spread across multiple departments, making it difficult for management to obtain a unified view of operational performance.
+
+        This lack of centralized reporting can delay decision-making, reduce visibility into key performance indicators, and limit the organization's ability to respond quickly to production, inventory, sales, and supply chain challenges.
+
+    </p>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Project Objectives</h2>
+
+    <ul>
+
+        <li>Develop an executive dashboard for manufacturing operations.</li>
+
+        <li>Monitor production performance and operational efficiency.</li>
+
+        <li>Track sales trends and business profitability.</li>
+
+        <li>Analyze inventory availability and turnover.</li>
+
+        <li>Evaluate supplier and supply chain performance.</li>
+
+        <li>Measure workforce productivity through key operational KPIs.</li>
+
+    </ul>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Dataset Overview</h2>
+
+    <p>
+
+        The dashboard was developed using a manufacturing dataset containing
+        production, inventory, sales, supplier, employee, and shipment
+        information. Multiple related tables were modeled in Power BI to
+        provide a comprehensive view of business operations.
+
+    </p>
+
+    <div class="dataset-table">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Dataset</th>
+
+                    <th>Description</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Production</td>
+                    <td>Production output, units manufactured and operational performance.</td>
+                </tr>
+
+                <tr>
+                    <td>Sales</td>
+                    <td>Revenue, orders, customers and profitability analysis.</td>
+                </tr>
+
+                <tr>
+                    <td>Inventory</td>
+                    <td>Stock levels, warehouse performance and inventory turnover.</td>
+                </tr>
+
+                <tr>
+                    <td>Employees</td>
+                    <td>Workforce productivity and departmental performance.</td>
+                </tr>
+
+                <tr>
+                    <td>Suppliers</td>
+                    <td>Supplier performance and procurement activities.</td>
+                </tr>
+
+                <tr>
+                    <td>Shipments</td>
+                    <td>Logistics, delivery tracking and shipping performance.</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Data Preparation</h2>
+
+    <p>
+
+        Before building the dashboard, the dataset was cleaned and transformed
+        using Power Query to improve data quality and ensure accurate reporting.
+
+    </p>
+
+    <div class="process-grid">
+
+        <div class="process-card">
+
+            <h3>🧹 Data Cleaning</h3>
+
+            <p>
+                Removed duplicates, corrected inconsistencies and handled missing values.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <h3>🔄 Data Transformation</h3>
+
+            <p>
+                Standardized formats, created calculated columns and transformed fields.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <h3>🗓 Calendar Table</h3>
+
+            <p>
+                Built a dedicated Date table to support time intelligence analysis.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <h3>🔗 Data Modeling</h3>
+
+            <p>
+                Established relationships between tables to create an optimized star schema.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Dashboard Design</h2>
+
+    <p>
+
+        The dashboard was designed to provide executives with a clear and
+        interactive overview of manufacturing operations. The layout follows
+        a logical flow, allowing users to quickly understand business
+        performance before exploring detailed operational metrics.
+
+    </p>
+
+    <div class="process-grid">
+
+        <div class="process-card">
+
+            <h3>📊 Executive Dashboard</h3>
+
+            <p>
+                Displays high-level KPIs including production, revenue,
+                inventory, workforce and supply chain performance.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <h3>📈 Interactive Visuals</h3>
+
+            <p>
+                Line charts, bar charts, KPI cards and slicers enable users
+                to analyze trends across different business dimensions.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <h3>🎯 User Experience</h3>
+
+            <p>
+                Clean navigation, consistent colors and responsive layout
+                improve readability and simplify decision-making.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <h3>⚡ Performance</h3>
+
+            <p>
+                Optimized data model and DAX measures ensure efficient
+                report performance and fast filtering.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Key KPIs & DAX Measures</h2>
+
+    <p>
+
+        The dashboard incorporates several calculated measures developed
+        using DAX to provide meaningful business insights.
+
+    </p>
+
+    <div class="about-skills">
+
+        <span>Total Revenue</span>
+
+        <span>Total Production</span>
+
+        <span>Total Orders</span>
+
+        <span>Inventory Value</span>
+
+        <span>Average Sales</span>
+
+        <span>Production Efficiency</span>
+
+        <span>Employee Productivity</span>
+
+        <span>Supplier Performance</span>
+
+    </div>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Key Business Insights</h2>
+
+    <p>
+
+        Analysis of the manufacturing data revealed several important trends
+        that could help management improve operational efficiency and business
+        performance.
+
+    </p>
+
+    <div class="process-grid">
+
+        <div class="process-card">
+
+            <h3>📈 Sales Performance</h3>
+
+            <p>
+
+                Revenue trends revealed periods of strong sales performance,
+                highlighting opportunities to maximize profitability during
+                high-demand periods.
+
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <h3>📦 Inventory Management</h3>
+
+            <p>
+
+                Inventory analysis identified stock movement patterns that
+                can help reduce overstocking and minimize stock shortages.
+
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <h3>🏭 Production Efficiency</h3>
+
+            <p>
+
+                Production metrics highlighted opportunities to improve
+                operational efficiency and optimize manufacturing output.
+
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <h3>🚚 Supply Chain Performance</h3>
+
+            <p>
+
+                Supplier and shipment analysis provided visibility into
+                procurement efficiency and delivery performance.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Strategic Recommendations</h2>
+
+    <p>
+
+        Based on the insights obtained from the dashboard, the following
+        recommendations can support better business performance.
+
+    </p>
+
+    <ul>
+
+        <li>Improve production planning using historical demand trends.</li>
+
+        <li>Optimize inventory replenishment to reduce excess stock and stockouts.</li>
+
+        <li>Strengthen supplier performance monitoring through regular KPI reviews.</li>
+
+        <li>Focus on high-performing products to maximize profitability.</li>
+
+        <li>Monitor employee productivity continuously to improve operational efficiency.</li>
+
+        <li>Use dashboard insights during executive meetings for faster data-driven decisions.</li>
+
+    </ul>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Skills Demonstrated</h2>
+
+    <div class="about-skills">
+
+        <span>Power BI</span>
+
+        <span>DAX</span>
+
+        <span>Power Query</span>
+
+        <span>Excel</span>
+
+        <span>Business Intelligence</span>
+
+        <span>Data Cleaning</span>
+
+        <span>Data Modeling</span>
+
+        <span>Dashboard Design</span>
+
+        <span>Data Visualization</span>
+
+        <span>KPI Development</span>
+
+        <span>Business Analysis</span>
+
+    </div>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Conclusion</h2>
+
+    <p>
+
+        This project demonstrates my ability to transform complex manufacturing
+        data into meaningful business insights through Business Intelligence.
+
+        By combining Power BI, DAX, SQL, Excel and Power Query, I developed
+        an interactive reporting solution that enables executives to monitor
+        operational performance, evaluate KPIs and make informed business
+        decisions with confidence.
+
+    </p>
+
+</section>
+
+<section class="next-project">
+
+    <h2>
+
+        Continue Exploring My Portfolio
+
+    </h2>
+
+    <p>
+
+        Continue exploring my Business Intelligence portfolio by viewing another interactive dashboard focused on sales performance, customer insights, and revenue analysis.
+
+    </p>
+
+    <a href="../sales-dashboard/"
+
+       class="btn-primary">
+
+        View Sales Dashboard →
+
+    </a>
+
+</section>
+
+<footer class="footer">
+
+    <p>
+
+        © 2026 Adaku Bridget Nwaolisa. <br>
+
+        All Rights Reserved.
+
+    </p>
+
+    <p>
+
+        Designed & Developed with ❤️ by Bridget.
+
+    </p>
+
+</footer>
+
+<script src="../../js/script.js"></script>
+
+</body>
+
+</html>
