@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Emperor Logistics Dashboard | Case Study
+    </title>
+
+    <link rel="stylesheet"
+          href="../../css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">BN</span>
+            <span class="logo-name">Bridget</span>
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="../../index.html">
+                    ← Back to Portfolio
+                </a>
+            </li>
+
+            <li>
+                <a href="../emperor-dashboard/">
+                    Dashboard
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="nav-actions">
+
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                🌙
+            </button>
+
+            <div class="menu-toggle">
+                ☰
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<section class="project-page">
+
+    <div class="project-container">
+
+        <h1>
+
+            Emperor Logistics & Supply Chain Performance Dashboard
+
+        </h1>
+
+        <p class="project-intro">
+
+            Business Intelligence Case Study
+
+        </p>
+
+    </div>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Executive Summary</h2>
+
+    <p>
+
+        This project demonstrates the design and development of an end-to-end
+        <strong>Supply Chain and Logistics Performance Dashboard</strong> for
+        <strong>Emperor Logistics</strong> using Power BI.
+
+        The solution consolidates operational data across orders, deliveries,
+        procurement, inventory, fleet operations, finance, customer service,
+        and returns into a single reporting environment that enables management
+        to monitor business performance, identify operational bottlenecks,
+        control logistics costs, and make faster data-driven decisions.
+
+    </p>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Business Problem</h2>
+
+    <p>
+
+        Logistics and supply chain businesses often manage high volumes of
+        operational data across multiple functions such as procurement,
+        warehousing, transport, customer service, and financial operations.
+        When this information is spread across disconnected reports and
+        spreadsheets, it becomes difficult for management to maintain visibility
+        into business performance, monitor service quality, identify cost
+        drivers, and respond quickly to operational issues.
+
+    </p>
+
+    <p>
+
+        Emperor Logistics required a centralized Business Intelligence solution
+        that would provide a unified view of logistics performance across the
+        supply chain, support executive reporting, and help management track
+        the key drivers of service delivery, cost efficiency, customer returns,
+        and operational effectiveness.
+
+    </p>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Project Objectives</h2>
+
+    <ul>
+
+        <li>Develop an executive dashboard for logistics and supply chain operations.</li>
+
+        <li>Monitor order fulfillment and delivery performance.</li>
+
+        <li>Track procurement spending, supplier activity, and purchase trends.</li>
+
+        <li>Analyze inventory levels and warehouse distribution.</li>
+
+        <li>Evaluate fleet utilization, shipment activity, and transport performance.</li>
+
+        <li>Assess financial cost drivers such as fuel, maintenance, and operating cost.</li>
+
+        <li>Monitor customer service performance, return volume, and return reasons.</li>
+
+        <li>Generate strategic recommendations to improve operational efficiency and service quality.</li>
+
+    </ul>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Dataset Overview</h2>
+
+    <p>
+
+        The dashboard was developed using a logistics and supply chain dataset
+        containing transactional, operational, inventory, procurement, fleet,
+        and customer return data. Multiple related tables were modeled in Power BI
+        to provide a comprehensive view of Emperor Logistics’ business operations.
+
+    </p>
+
+    <div class="dataset-table">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Dataset</th>
+
+                    <th>Description</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Orders</td>
+                    <td>Customer orders, order dates, order value and fulfillment-related information.</td>
+                </tr>
+
+                <tr>
+                    <td>Deliveries</td>
+                    <td>Delivery records, fulfillment status, delivery completion and shipment execution.</td>
+                </tr>
+
+                <tr>
+                    <td>Purchases</td>
+                    <td>Procurement transactions, purchase cost, category-level spend and supplier purchases.</td>
+                </tr>
+
+                <tr>
+                    <td>Suppliers</td>
+                    <td>Supplier information used to analyze procurement activity and supplier contribution.</td>
+                </tr>
+
+                <tr>
+                    <td>Inventory</td>
+                    <td>Product stock levels, warehouse allocation and inventory distribution across categories.</td>
+                </tr>
+
+                <tr>
+                    <td>Warehouses</td>
+                    <td>Warehouse records used to evaluate stock distribution and storage coverage.</td>
+                </tr>
+
+                <tr>
+                    <td>Vehicles</td>
+                    <td>Vehicle information for tracking fleet size, vehicle type and transport operations.</td>
+                </tr>
+
+                <tr>
+                    <td>Drivers</td>
+                    <td>Driver records supporting shipment and fleet performance analysis.</td>
+                </tr>
+
+                <tr>
+                    <td>Shipments</td>
+                    <td>Shipment transactions, shipment status, vehicle usage and transport activity.</td>
+                </tr>
+
+                <tr>
+                    <td>Fuel Logs</td>
+                    <td>Fuel spending and transport cost records used in operational cost analysis.</td>
+                </tr>
+
+                <tr>
+                    <td>Maintenance</td>
+                    <td>Maintenance cost data for evaluating fleet servicing and upkeep expenditure.</td>
+                </tr>
+
+                <tr>
+                    <td>Returns</td>
+                    <td>Returned deliveries, return reasons, return cost and customer service issues.</td>
+                </tr>
+
+                <tr>
+                    <td>Customers</td>
+                    <td>Customer records supporting order analysis, service trends and return monitoring.</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Data Preparation</h2>
+
+    <p>
+
+        Before building the dashboard, the dataset was cleaned, transformed and
+        modeled in Power BI to ensure data quality, consistency and reporting accuracy.
+
+    </p>
+
+    <div class="process-grid">
+
+        <div class="process-card">
+
+            <h3>🧹 Data Cleaning</h3>
+
+            <p>
+                Removed duplicates, handled missing values, corrected data inconsistencies and standardized text fields.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <h3>🔄 Data Transformation</h3>
+
+            <p>
+                Applied Power Query transformations, standardized date and numeric formats, and prepared operational fields for analysis.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <h3>🗓 Calendar Table</h3>
+
+            <p>
+                Built a dedicated date table to support time intelligence analysis across orders, deliveries, purchases, shipments and returns.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <h3>🔗 Data Modeling</h3>
+
+            <p>
+                Established relationships across operational tables to build a structured model for accurate cross-functional reporting.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Dashboard Design</h2>
+
+    <p>
+
+        The dashboard was designed as a multi-page reporting solution that allows
+        management to move from a high-level executive overview into more detailed
+        analysis across each major logistics function. The report structure follows
+        a logical business flow, beginning with overall operational performance and
+        drilling into fulfillment, procurement, inventory, fleet, finance, and
+        customer service.
+
+    </p>
+
+    <div class="process-grid">
+
+        <div class="process-card">
+
+            <h3>📊 Executive Overview</h3>
+
+            <p>
+                Presents a consolidated summary of orders, deliveries, purchase cost, active vehicles and customer satisfaction.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <h3>🚚 Operational Dashboards</h3>
+
+            <p>
+                Dedicated pages were created for Orders & Deliveries, Procurement, Inventory, Fleet, Finance, and Customer Service analysis.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <h3>🎯 User Experience</h3>
+
+            <p>
+                Clean navigation, consistent formatting, KPI cards and intuitive visuals were used to improve readability and decision-making.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <h3>⚡ Performance Optimization</h3>
+
+            <p>
+                DAX measures and a structured data model were used to ensure efficient filtering and responsive report performance.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Dashboard Pages</h2>
+
+    <div class="process-grid">
+
+        <div class="process-card">
+            <h3>1. Executive Overview</h3>
+            <p>High-level summary of logistics performance, procurement cost, fleet availability and customer satisfaction.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>2. Orders & Deliveries Analysis</h3>
+            <p>Analysis of order volume, delivery performance, fulfillment rate and customer-level delivery activity.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>3. Procurement & Supplier Analysis</h3>
+            <p>Procurement cost analysis, supplier contribution, purchase trends and category-level spend visibility.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>4. Inventory & Warehousing Analysis</h3>
+            <p>Stock quantity, warehouse coverage, inventory distribution and product category performance.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>5. Fleet & Transport Analysis</h3>
+            <p>Vehicle utilization, shipment activity, shipment status and transport cost visibility.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>6. Financial Performance Analysis</h3>
+            <p>Analysis of purchase cost, fuel cost, maintenance cost, operating cost and cost distribution.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>7. Customer Service & Returns Analysis</h3>
+            <p>Customer rating, return volume, return reasons and return cost trends.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>8. General Insights & Recommendations</h3>
+            <p>Executive summary of key findings and strategic recommendations for improving supply chain performance.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Key KPIs & DAX Measures</h2>
+
+    <p>
+
+        The dashboard incorporates KPI cards and DAX measures designed to track
+        operational performance across the supply chain and provide management with
+        actionable visibility into key business metrics.
+
+    </p>
+
+    <div class="about-skills">
+
+        <span>Total Orders</span>
+        <span>Total Deliveries</span>
+        <span>Fulfillment Rate</span>
+        <span>Purchase Cost</span>
+        <span>Active Vehicles</span>
+        <span>Total Products</span>
+        <span>Total Stock Quantity</span>
+        <span>Total Warehouses</span>
+        <span>Total Vehicles</span>
+        <span>Total Drivers</span>
+        <span>Shipment Volume</span>
+        <span>Fuel Cost</span>
+        <span>Maintenance Cost</span>
+        <span>Operating Cost</span>
+        <span>Customer Rating</span>
+        <span>Return Count</span>
+        <span>Return Cost</span>
+        <span>Return Rate</span>
+
+    </div>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Key Business Insights</h2>
+
+    <p>
+
+        The analysis uncovered several operational and financial insights across
+        logistics execution, procurement, inventory, fleet performance and customer service.
+
+    </p>
+
+    <div class="process-grid">
+
+        <div class="process-card">
+
+            <h3>📦 Order Fulfillment</h3>
+
+            <p>
+                Order and delivery volume remained strong across the reporting period, but fulfillment performance showed opportunities to improve completed delivery execution.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <h3>🧾 Procurement Spend</h3>
+
+            <p>
+                Procurement spending represented a major cost driver, with some suppliers and categories accounting for a significant share of total purchase cost.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <h3>🏬 Inventory Visibility</h3>
+
+            <p>
+                Inventory levels were high across multiple warehouses, highlighting the need for better stock allocation and inventory planning.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <h3>🚛 Fleet Costs</h3>
+
+            <p>
+                Fuel and maintenance costs represented a significant share of logistics operating expenses, making fleet cost control a key management priority.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <h3>📞 Customer Returns</h3>
+
+            <p>
+                Return analysis revealed that late deliveries and order issues were major drivers of customer dissatisfaction and return-related cost.
+            </p>
+
+        </div>
+
+        <div class="process-card">
+
+            <h3>💰 Financial Efficiency</h3>
+
+            <p>
+                Total logistics cost was heavily influenced by procurement, fuel and maintenance, reinforcing the need for ongoing cost monitoring and operational optimization.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Strategic Recommendations</h2>
+
+    <p>
+
+        Based on the insights obtained from the dashboard, the following actions
+        are recommended to improve logistics efficiency, cost control and customer satisfaction.
+
+    </p>
+
+    <ul>
+
+        <li>Improve delivery execution by investigating incomplete or delayed deliveries and resolving last-mile fulfillment bottlenecks.</li>
+
+        <li>Negotiate better terms with top suppliers and monitor high-spend categories to improve procurement efficiency.</li>
+
+        <li>Optimize warehouse allocation and stock planning to reduce overstock risk and improve inventory utilization.</li>
+
+        <li>Reduce fleet operating cost through better fuel monitoring, route optimization and proactive maintenance planning.</li>
+
+        <li>Track customer return reasons closely and address recurring issues such as late delivery, wrong item dispatch and damaged items.</li>
+
+        <li>Use the dashboard during operational and executive review meetings to support faster, evidence-based decision-making.</li>
+
+    </ul>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Skills Demonstrated</h2>
+
+    <div class="about-skills">
+
+        <span>Power BI</span>
+        <span>DAX</span>
+        <span>Power Query</span>
+        <span>Excel</span>
+        <span>Business Intelligence</span>
+        <span>Data Cleaning</span>
+        <span>Data Modeling</span>
+        <span>Dashboard Design</span>
+        <span>Data Visualization</span>
+        <span>KPI Development</span>
+        <span>Supply Chain Analytics</span>
+        <span>Logistics Performance Analysis</span>
+        <span>Business Analysis</span>
+
+    </div>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Conclusion</h2>
+
+    <p>
+
+        This project demonstrates my ability to transform complex logistics and
+        supply chain data into actionable business intelligence through Power BI.
+
+        By combining data cleaning, modeling, DAX calculations, dashboard design
+        and business analysis, I developed an interactive reporting solution that
+        enables management to monitor operational performance, evaluate cost drivers,
+        improve service quality, and make informed strategic decisions with confidence.
+
+    </p>
+
+</section>
+
+<section class="next-project">
+
+    <h2>
+
+        Continue Exploring My Portfolio
+
+    </h2>
+
+    <p>
+
+        Explore another Business Intelligence project from my portfolio to see how I apply analytics across different business domains and operational challenges.
+
+    </p>
+
+    <a href="../manufacturing-dashboard/"
+       class="btn-primary">
+
+        View Manufacturing Dashboard →
+
+    </a>
+
+</section>
+
+<footer class="footer">
+
+    <p>
+
+        © 2026 Adaku Bridget Nwaolisa. <br>
+
+        All Rights Reserved.
+
+    </p>
+
+    <p>
+
+        Designed & Developed with ❤️ by Bridget.
+
+    </p>
+
+</footer>
+
+<script src="../../js/script.js"></script>
+
+</body>
+
+</html>
