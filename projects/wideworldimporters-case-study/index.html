@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Wide World Importers Dashboard | Case Study</title>
+
+<link rel="stylesheet"
+href="../../css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">BN</span>
+            <span class="logo-name">Bridget</span>
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="../../index.html">
+                    ← Back to Portfolio
+                </a>
+            </li>
+
+            <li>
+                <a href="../wideworldimporters-dashboard/">
+                    Dashboard
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="nav-actions">
+
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                🌙
+            </button>
+
+            <div class="menu-toggle">
+                ☰
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<section class="project-page">
+
+<div class="project-container">
+
+<h1>
+
+Wide World Importers Business Intelligence & Advanced Analytics
+
+</h1>
+
+<p class="project-intro">
+
+Business Intelligence Case Study
+
+</p>
+
+</div>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Executive Summary</h2>
+
+    <p>
+        This project demonstrates the development of an end-to-end <strong>Business Intelligence and Advanced Analytics solution</strong> for <strong>Wide World Importers</strong> using SQL, Power BI, Power Query, DAX and Excel. The solution consolidates operational and commercial data into a centralized reporting environment that enables management to monitor revenue performance, customer activity, supplier contribution, supply chain trends, profitability, warehouse operations, financial reporting and forecasting from a single analytics platform.
+    </p>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Business Problem</h2>
+
+    <p>
+        Wide World Importers operates across multiple business functions including customer sales, supplier purchases, inventory movement, invoicing, warehouse operations and financial transactions. Without a centralized analytical framework, it becomes difficult for management to monitor overall business performance, identify revenue drivers, understand cost pressure, track supplier dependency, evaluate customer behavior and plan effectively for future demand.
+    </p>
+
+    <p>
+        The business required a comprehensive Business Intelligence solution that would unify these operational data points into a structured reporting model and provide actionable insights for executive decision-making.
+    </p>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Project Objectives</h2>
+
+    <ul>
+        <li>Develop a centralized executive dashboard for monitoring commercial and operational performance.</li>
+        <li>Track sales performance, order volume and revenue growth across time.</li>
+        <li>Analyze customer activity, customer contribution and buying behavior.</li>
+        <li>Evaluate supplier performance, procurement concentration and supply chain activity.</li>
+        <li>Assess profitability, cost pressure and margin performance.</li>
+        <li>Monitor financial reporting metrics including payments and outstanding balances.</li>
+        <li>Review warehouse activity, stock movement and operational distribution.</li>
+        <li>Support planning through time intelligence analysis and forecasting.</li>
+        <li>Generate strategic insights and recommendations for business improvement.</li>
+    </ul>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Data Source & Technical Workflow</h2>
+
+    <p>
+        This project was built using the <strong>Wide World Importers</strong> sample database backup sourced from <strong>Kaggle</strong>. The solution followed an end-to-end analytics workflow beginning with database setup in SQL and ending with a multi-page reporting solution in Power BI.
+    </p>
+
+    <div class="process-grid">
+
+        <div class="process-card">
+            <h3>🗄 SQL Database Setup</h3>
+            <p>Downloaded the Wide World Importers backup file from Kaggle and loaded the database into a SQL environment to serve as the primary data source for the project.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>🔗 Power BI Connection</h3>
+            <p>Connected Power BI directly to the SQL database and imported only the relevant tables required for analysis.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>🧹 Data Cleaning & Transformation</h3>
+            <p>Removed unnecessary tables, dropped irrelevant columns, transformed fields and prepared the data for reporting using Power Query Editor.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>🔄 Data Modeling & DAX</h3>
+            <p>Built relationships across the selected business tables and created DAX measures for revenue, profitability, customer metrics, supplier performance, warehouse analysis, financial reporting and forecasting.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Dataset Scope</h2>
+
+    <p>
+        The solution was built using a combination of wholesale business data covering customer orders, invoices, suppliers, products, procurement activity, warehouse operations and financial records.
+    </p>
+
+    <div class="dataset-table">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Dataset Area</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Customers</td>
+                    <td>Customer records used to analyze customer contribution, order activity and commercial performance.</td>
+                </tr>
+                <tr>
+                    <td>Orders & Invoices</td>
+                    <td>Sales and invoice data used to monitor revenue, order volume, quantity sold and sales trends.</td>
+                </tr>
+                <tr>
+                    <td>Suppliers</td>
+                    <td>Supplier data used to evaluate procurement activity, supplier contribution and concentration.</td>
+                </tr>
+                <tr>
+                    <td>Products / Stock Items</td>
+                    <td>Product-level data supporting sales analysis, profitability analysis and warehouse reporting.</td>
+                </tr>
+                <tr>
+                    <td>Supply Chain / Procurement</td>
+                    <td>Procurement-related records used for supplier and supply chain performance analysis.</td>
+                </tr>
+                <tr>
+                    <td>Warehouse / Inventory</td>
+                    <td>Warehouse and stock movement data used to assess product distribution and operational visibility.</td>
+                </tr>
+                <tr>
+                    <td>Financial / Payment Records</td>
+                    <td>Payment and balance-related data used for financial reporting and outstanding balance analysis.</td>
+                </tr>
+                <tr>
+                    <td>Regional / Country Data</td>
+                    <td>Geographic data supporting regional sales analysis and customer distribution reporting.</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Dashboard Design</h2>
+
+    <p>
+        The report was designed as a multi-page executive analytics solution that enables users to move from a high-level overview into deeper functional analysis across sales, customers, suppliers, profitability, finance, warehouse operations and forecasting.
+    </p>
+
+    <div class="process-grid">
+
+        <div class="process-card">
+            <h3>📊 Executive Overview</h3>
+            <p>Provides a consolidated summary of revenue, orders, customer count, quantity sold, growth rate and profit performance.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>💼 Functional Dashboards</h3>
+            <p>Dedicated dashboard pages were created for Sales, Customers, Supply Chain, Suppliers, Profitability, Time Intelligence, Forecasting, Financial Reporting and Warehouse Analysis.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>🎯 User Experience</h3>
+            <p>Clean navigation, KPI cards, consistent formatting and business-friendly visuals were used to improve readability and decision-making.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>⚡ Performance Optimization</h3>
+            <p>Only relevant tables were loaded into the model, unnecessary columns were removed and DAX measures were structured to support responsive report performance.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Dashboard Pages</h2>
+
+    <div class="process-grid">
+
+        <div class="process-card">
+            <h3>1. Executive Overview</h3>
+            <p>High-level summary of revenue, orders, quantity sold, customer count, sales growth and total profit.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>2. Sales Performance Analysis</h3>
+            <p>Analysis of revenue trends, sales by product, category performance and commercial activity across time.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>3. Customer Analytics</h3>
+            <p>Customer contribution, buying behavior, customer segmentation and top customer performance.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>4. Supply Chain & Logistics Analysis</h3>
+            <p>Analysis of supply chain activity, procurement flow and operational movement across the business.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>5. Supplier / Vendor Analysis</h3>
+            <p>Supplier performance, supplier spend concentration and procurement dependency analysis.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>6. Profitability Analysis</h3>
+            <p>Evaluation of total profit, margin pressure, cost drivers and profitability trends.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>7. Time Intelligence Analysis</h3>
+            <p>Trend analysis across time periods to identify seasonality, growth patterns and business movement over time.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>8. Forecasting & Predictive Analysis</h3>
+            <p>Forecast visuals and predictive indicators used to support planning and future performance analysis.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>9. Financial Reporting Analysis</h3>
+            <p>Financial metrics including payments, outstanding balances and reporting indicators used to monitor business health.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>10. Warehouse Analysis</h3>
+            <p>Warehouse and stock movement analysis used to monitor operational distribution and inventory-related visibility.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>11. General Insights & Recommendations</h3>
+            <p>Executive summary of key findings and strategic recommendations for improving performance and profitability.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Key KPIs & DAX Measures</h2>
+
+    <p>
+        The solution includes KPI cards and DAX measures designed to provide management with visibility into commercial, operational and financial performance across the business.
+    </p>
+
+    <div class="about-skills">
+
+        <span>Total Revenue</span>
+        <span>Total Orders</span>
+        <span>Total Customers</span>
+        <span>Quantity Sold</span>
+        <span>Sales Growth %</span>
+        <span>Total Profit</span>
+        <span>Top Customer Revenue</span>
+        <span>Supplier Contribution</span>
+        <span>Purchase / Procurement Metrics</span>
+        <span>Warehouse Stock Metrics</span>
+        <span>Outstanding Balances</span>
+        <span>Payment Activity</span>
+        <span>Forecast Metrics</span>
+        <span>Time Intelligence Measures</span>
+
+    </div>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Key Business Insights</h2>
+
+    <p>
+        The dashboard analysis uncovered several commercial, operational and financial insights across Wide World Importers’ business activities.
+    </p>
+
+    <div class="process-grid">
+
+        <div class="process-card">
+            <h3>💰 Revenue Growth with Profitability Pressure</h3>
+            <p>The business generated strong revenue and order volume, but profitability remained under pressure, suggesting that high operational or procurement-related costs were eroding margins.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>👥 Customer Concentration</h3>
+            <p>A relatively small group of customers contributed a significant share of total revenue, highlighting concentration opportunities and risks.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>🧾 Supplier Dependency</h3>
+            <p>Procurement activity was concentrated among a few suppliers, indicating the need to monitor supplier dependency and vendor risk more closely.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>📉 Profitability Gaps</h3>
+            <p>Some categories and business areas generated revenue but delivered weak profit outcomes, indicating a need for cost and pricing review.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>🏬 Warehouse Visibility</h3>
+            <p>Warehouse and inventory reporting showed uneven movement across products and locations, suggesting opportunities to improve stock planning and distribution efficiency.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>🔮 Forecast Stability</h3>
+            <p>Forecasting suggested relatively stable demand patterns, supporting the use of forward-looking planning for sales and inventory decisions.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Strategic Recommendations</h2>
+
+    <ul>
+        <li>Review cost structure and margin performance across low-profit product categories to improve profitability.</li>
+        <li>Monitor top-customer concentration and develop broader customer acquisition strategies to reduce dependency risk.</li>
+        <li>Evaluate supplier concentration and negotiate better procurement terms with dominant vendors.</li>
+        <li>Use time-based analysis and forecasting outputs to improve demand planning and commercial planning.</li>
+        <li>Improve warehouse visibility and stock allocation to reduce inefficiencies in product distribution and inventory movement.</li>
+        <li>Incorporate dashboard findings into executive review meetings for faster, evidence-based decision-making.</li>
+    </ul>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Skills Demonstrated</h2>
+
+    <div class="about-skills">
+
+        <span>SQL</span>
+        <span>Power BI</span>
+        <span>Power Query</span>
+        <span>DAX</span>
+        <span>Excel</span>
+        <span>Data Cleaning</span>
+        <span>Data Modeling</span>
+        <span>Dashboard Design</span>
+        <span>Business Intelligence</span>
+        <span>Data Visualization</span>
+        <span>Financial Analysis</span>
+        <span>Supply Chain Analytics</span>
+        <span>Forecasting Analysis</span>
+        <span>Business Storytelling</span>
+
+    </div>
+
+</section>
+
+<section class="case-study-section">
+
+    <h2>Conclusion</h2>
+
+    <p>
+        This project demonstrates my ability to build a complete business intelligence solution from raw SQL database files through to executive dashboards and strategic recommendations. It reflects practical experience in SQL database setup, Power BI reporting, Power Query transformation, DAX calculations, data modeling, forecasting, financial analysis and cross-functional business reporting.
+    </p>
+
+</section>
+
+<section class="next-project">
+
+    <h2>Continue Exploring My Portfolio</h2>
+
+    <p>
+        Explore another Business Intelligence project from my portfolio to see how I apply analytics across different business domains and operational challenges.
+    </p>
+
+    <a href="../manufacturing-dashboard/"
+       class="btn-primary">
+
+        View Manufacturing Dashboard →
+
+    </a>
+
+</section>
+
+<footer class="footer">
+
+    <p>
+
+        © 2026 Adaku Bridget Nwaolisa. <br>
+
+        All Rights Reserved.
+
+    </p>
+
+    <p>
+
+        Designed & Developed with ❤️ by Bridget.
+
+    </p>
+
+</footer>
+
+<script src="../../js/script.js"></script>
+
+</body>
+
+</html>
