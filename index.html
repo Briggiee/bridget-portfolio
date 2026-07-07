@@ -602,13 +602,10 @@
 
                 <form class="contact-form"
                      action="https://formspree.io/f/xnjkoepr"
-                     method="POST">
+                     method="POST"
+                     id="contactForm">
 
                        <h3>Send Me a Message</h3>
-
-                    <input type="hidden"
-                      name="_next"
-                       value="https://briggiee.github.io/averson-manufacturing-intelligence-analytics/#contact">
 
                     <input
                         type="text"
@@ -631,6 +628,8 @@
                     <button type="submit" class="btn-primary">
                        Send Message
                     </button>
+
+                    <p class="form-status" id="formStatus"></p>
 
                 </form>
 
